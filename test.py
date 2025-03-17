@@ -42,7 +42,7 @@ class TestPriorityQueue(unittest.TestCase):
     pq.push("Task 1", 3)
     pq.push("Task 2", 1)
     pq.push("Task 3", 2)
-    pq.push("Task 4", 4)
+    pq.push("Task 1", 4)
 
     self.assertEqual(pq.pop(), "Task 2")
     self.assertEqual(pq.pop(), "Task 3")
@@ -53,8 +53,7 @@ class TestPriorityQueue(unittest.TestCase):
     pq = PriorityQueue()
 
     pq.push("Task 1", 3)
-    # pq.push("Task 2", -1)
-    pq.push("Task 2", 1)
+    pq.push("Task 2", -1)
     pq.push("Task 3", 2)
 
     self.assertEqual(pq.pop(), "Task 2")
