@@ -12,10 +12,10 @@ class PriorityQueue:
       self._swap(0, len(self.heap) - 1)
       item = self.heap.pop()
       self._sift_down(0)
-      return item
+      return item[1]
     elif len(self.heap) == 1:
       item = self.heap.pop()
-      return item
+      return item[1]
     else:
       return None
 
